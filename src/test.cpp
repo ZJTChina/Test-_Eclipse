@@ -11,6 +11,7 @@
 #include <string>
 #include "sensor.h"
 #include "namesp.h"
+#include "Stock.h"
 
 using namespace std;
 
@@ -24,6 +25,13 @@ int main()
 	string str1;
 	ifstream fin;
 	ofstream fout;
+
+	{
+
+		Stock  class1;
+
+	}
+
 	int a1 = 10 , a2 = 20 , a3 = 30;
 
 	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
@@ -56,7 +64,7 @@ void other(void)
 	using namespace Sp_Message;
 	int i = 0;
 
-	St_message ZJT = { {"zhang , jitao"} , 24 };
+	St_message ZJT = { {"zhang" , "jitao"} , 24 };
 	Sp_Message::ShowMessage(ZJT);
 	St_message St_mess[3];
 	for(i = 0;i < 3 ; i ++)
